@@ -1,0 +1,112 @@
+.container{
+    font-weight: 300;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: var(--primaryBg);
+    color: var(--primaryText);
+}
+.logo{
+    flex: 1;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+.logo .num{
+    color:var(--primaryText)
+}
+
+.links{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.link:hover{
+    color: grey;
+}
+.link:focus{
+    color: gray;
+    scale: 1.1;
+}
+.navButton{
+    display: none;
+    width: 30px;
+    height: 20px;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: var(--primaryText);
+}
+.crossButton{
+        width: 30px;
+    height: 20px;
+}
+.cross1{
+            width: 100%;
+    height: 4px;
+    background-color: var(--primaryText);
+    transform: rotate(-45deg);
+}
+.cross2{
+            width: 100%;
+    height: 4px;
+    background-color: var(--primaryText);
+    transform: rotate(45deg);
+}
+.nlinks {
+    z-index: 9999;
+    position: absolute;
+    top: 80px; /* Adjust the top position to start below the header */
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--primaryBg);
+    display: none; /* hide nlinks on wider screens */
+    transition: all 2s ease-in-out;
+}
+.nlink{
+    font-size: 30px;
+    color: var(--primaryText);
+}
+.nlink:hover{
+    color: grey;
+}
+.nlink:focus{
+    color: gray;
+    scale: 1.1;
+}
+
+@media screen  and (max-width:860px){
+    .navButton{
+
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
+    .nlinks{
+        display: flex;
+    }
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640) {
+    .container{
+        width: 100%;
+    }
+}

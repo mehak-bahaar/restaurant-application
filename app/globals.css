@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Mulish:wght@200;300;400;600&family=Playfair+Display:wght@600;700&family=Playfair:ital,opsz,wght@1,5..1200,900&family=Raleway:wght@200;300;400&display=swap');
+/* 
+font-family: 'Playfair', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif; 
+*/
+
+:root{
+    --primaryBg:#F7E5D2;
+    --secondaryBg:#404D3C;
+    --primaryLightBg:#FBF2E8;
+    --secondaryText:beige;
+    --primaryText:#1e140a;
+
+    
+}
+
+*{
+    padding: 0;
+    margin: 0; 
+}
+html,body{
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif; 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
