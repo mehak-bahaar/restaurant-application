@@ -1,9 +1,11 @@
+
 import Hero from "@/Components/Hero/Hero";
 import Sections from "@/Components/Sections/Sections";
 import Slider from "@/Components/Slider/Slider";
-import Image from "next/image";
 
 export default function Home() {
+
+  
   return (
     <div>
       <Hero />
@@ -13,7 +15,7 @@ export default function Home() {
         description="Indulge in our tasty creations, where every bite tells a flavorful story. From savory classics to delightful surprises, our menu is a journey of culinary delights. Eat, enjoy, repeat – because good food is a simple joy."
         imgurl="/section1.webp"
         btnText="See More"
-        left={false}
+        left={ false}
       />
       <Sections
         title="Drink."

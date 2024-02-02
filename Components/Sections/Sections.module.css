@@ -4,6 +4,7 @@
     height: 90vh;
     display: flex;
     background-color: white;
+    flex-wrap: wrap;
 }
 .textContainer{
     flex: 1;
@@ -49,4 +50,15 @@
 }
 .image{
     object-fit: cover;
+}
+@media screen and (max-width: 869px){
+    .container{
+        flex-direction: column;
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    .textContainer{
+        padding: 10px 0;
+    }
 }

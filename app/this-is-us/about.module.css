@@ -1,0 +1,112 @@
+.thisIsUs{
+    width: 100%;
+    height: 56vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    background-color: var(--primaryLightBg);
+    color: var(--primaryText);
+}
+.thisIsUsTitle{
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.thisIsUsDesc{
+    font-size: 20px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+.reverse{
+      display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;  
+}
+.imgContainer{
+    flex: 1;
+    width:50%;
+    height:100%;
+    position: relative;
+}
+.img{
+    object-fit: cover;
+}
+.textContainer{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.center2{
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.3;
+}
+.desc{
+    line-height: 1.5;
+}
+.btn{
+    border: 1px solid black;
+    padding: 10px 20px;
+    width: max-content ;
+}
+.divider{
+    width: 100%;
+    height: 20vh;
+    background-color: var(--secondaryBg);
+    color: var(--secondaryText);
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media only screen and (max-width: 1024px){
+    .thisIsUs{
+        height: 50vh;
+    }
+    .thisIsUsTitle{
+        font-size: 90px;
+    }
+    .thisIsUsDesc{
+        font-size: 30px;
+    }
+    .center2{
+        width: 80%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+    .imgContainer{
+        width: 100%;
+    }
+}

@@ -1,13 +1,29 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import styles from './Sections.module.css'
 import Image from 'next/image'
 
 const Sections = (props) => {
-  const {title, description , imgurl , subTitle, btnText, left } = props
+  let {title, description , imgurl , subTitle, btnText, left } = props
+  const [visible, setvisible] = useState(left);
+useEffect(() => {
+  const handleResize = () =>{
+    if(window.innerWidth<896){
+      setvisible(false)
+    }else{
+      setvisible(left)
+    }
+  }
+   window.addEventListener("resize", handleResize);
+   handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+}, []);
   return (
     <>
       <div className={styles.container}>
-        {left && (
+        {visible && (
           <div className={styles.imageContainer}>
             <Image className={styles.image} fill src={imgurl}></Image>
           </div>
@@ -20,7 +36,7 @@ const Sections = (props) => {
             <button className={styles.btn}>{btnText}</button>
           </div>
         </div>
-        {!left && (
+        {!visible && (
           <div className={styles.imageContainer}>
             <Image className={styles.image} fill src={imgurl}></Image>
           </div>
