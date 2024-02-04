@@ -4,7 +4,7 @@ import styles from './Sections.module.css'
 import Image from 'next/image'
 
 const Sections = (props) => {
-  let {title, description , imgurl , subTitle, btnText, left } = props
+  let {title, description , imgUrl , subTitle, btnText, left } = props
   const [visible, setvisible] = useState(left);
 useEffect(() => {
   const handleResize = () =>{
@@ -25,7 +25,7 @@ useEffect(() => {
       <div className={styles.container}>
         {visible && (
           <div className={styles.imageContainer}>
-            <Image alt="img" className={styles.image} fill src={imgurl}></Image>
+            <Image alt="img" className={styles.image} fill src={imgUrl}></Image>
           </div>
         )}
         <div className={styles.textContainer}>
@@ -38,7 +38,7 @@ useEffect(() => {
         </div>
         {!visible && (
           <div className={styles.imageContainer}>
-            <Image alt="img" className={styles.image} fill src={imgurl}></Image>
+            <Image alt="img" className={styles.image} fill src={imgUrl}></Image>
           </div>
         )}
       </div>
