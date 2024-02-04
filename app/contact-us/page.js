@@ -84,10 +84,10 @@ const Contact = () => {
                 {<FontAwesomeIcon icon={faLocationDot} size="2x" />}
 
                 <h5 className={styles.infoHeading}>Address</h5>
-                <p className={styles.infoDesc}>
+                <div className={styles.infoDesc}>
                   500 Terry Francine St. <br />
                   San Francisco, CA 94158
-                </p>
+                </div>
               </div>
               <div className={styles.infoItem}>
                 {<FontAwesomeIcon icon={faEnvelope} size="2x" />}
