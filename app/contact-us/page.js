@@ -14,7 +14,7 @@ const Contact = () => {
         <div className={styles.center2}>
           <h1 className={styles.contactUsTitle}>Contact Us</h1>
           <p className={styles.contactUsDesc}>
-            Have a question or suggestion? Contact us! We're here to assist you.
+            Have a question or suggestion? Contact us! We are here to assist you.
             Reach out via phone, email, or stop by in person. Your feedback
             matters, and we appreciate your connection with 47th Cafe
           </p>

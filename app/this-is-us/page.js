@@ -10,7 +10,7 @@ const About = () => {
         <div className={styles.center2}>
           <h1 className={styles.thisIsUsTitle}>This Is Us</h1>
           <p className={styles.thisIsUsDesc}>
-            We're big believers in the power of a good meal and a friendly place
+            We are big believers in the power of a good meal and a friendly place
             to eat. Stop by for fresh, locally sourced food, served with a warm
             smile
           </p>
@@ -23,7 +23,7 @@ const About = () => {
               The Best Bite In The Neighbourhood.
             </h2>
             <p className={styles.desc}>
-              Experience the neighborhood's finest bites with us — a culinary
+              Experience the neighborhoods finest bites with us — a culinary
               journey of delectable flavors and unmatched quality. Indulge in
               the best bites right at your doorstep, where every dish is a
               celebration of community and exquisite taste.
@@ -58,8 +58,8 @@ const About = () => {
             <p className={styles.desc}>
               Savor the heartfelt essence of our culinary creations, expertly
               crafted and delivered to your plate. Experience the passion and
-              dedication we bring from our kitchen to your dining pleasure. It's
-              more than a meal; it's a journey of flavors made just for you.
+              dedication we bring from our kitchen to your dining pleasure. It is
+              more than a meal; it is a journey of flavors made just for you.
             </p>
             <button className={styles.btn}>Visit Us</button>
           </div>

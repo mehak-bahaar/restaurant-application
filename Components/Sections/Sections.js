@@ -25,7 +25,7 @@ useEffect(() => {
       <div className={styles.container}>
         {visible && (
           <div className={styles.imageContainer}>
-            <Image className={styles.image} fill src={imgurl}></Image>
+            <Image alt="img" className={styles.image} fill src={imgurl}></Image>
           </div>
         )}
         <div className={styles.textContainer}>
@@ -38,7 +38,7 @@ useEffect(() => {
         </div>
         {!visible && (
           <div className={styles.imageContainer}>
-            <Image className={styles.image} fill src={imgurl}></Image>
+            <Image alt="img" className={styles.image} fill src={imgurl}></Image>
           </div>
         )}
       </div>

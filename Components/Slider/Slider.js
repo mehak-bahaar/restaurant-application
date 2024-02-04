@@ -29,19 +29,20 @@ const Slider = () => {
       <div className={styles.container2}>
         <div className={styles.slider}>
           <div className={styles.sliderImg}>
-          <Image src='/p.webp' fill className={styles.img}></Image>
+            <Image alt='img'  className={styles.image} fill src={imgurl}></Image>
+          <Image alt='img'  src='/p.webp' fill className={styles.img}></Image>
           </div>
           <div className={styles.sliderImg}>
-          <Image src='/p2.jpeg' fill className={styles.img} ></Image>
+          <Image alt='img' src='/p2.jpeg' fill className={styles.img} ></Image>
           </div>
           <div className={styles.sliderImg}>
-          <Image src='/pp.jpeg' fill className={styles.img}></Image>
+          <Image alt='img' src='/pp.jpeg' fill className={styles.img}></Image>
           </div>
           <div className={styles.sliderImg}>
-          <Image src='/p0.webp' fill className={styles.img}></Image>
+          <Image alt='img' src='/p0.webp' fill className={styles.img}></Image>
           </div>
           <div className={styles.sliderImg}>
-          <Image src='/p5.webp' fill className={styles.img}></Image>
+          <Image alt='img' src='/p5.webp' fill className={styles.img}></Image>
           </div>
         </div>
       </div>
