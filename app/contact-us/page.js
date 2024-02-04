@@ -1,5 +1,12 @@
 import React from 'react'
 import styles from './contact.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBellConcierge } from '@fortawesome/free-solid-svg-icons';
+
+
 const Contact = () => {
   return (
     <>
@@ -16,42 +23,53 @@ const Contact = () => {
       <div className={styles.container}>
         <div className={styles.formContainer}>
           <form action="" className={styles.center}>
-            <label htmlFor="firstName" className={styles.name}>
-              First Name
-            </label>
-            <input
-              type="text"
-              name="firstName"
-              id="firstName"
-              className={styles.nameInput}
-            />
-            <label htmlFor="lastName" className={styles.name}>
-              First Name
-            </label>
-            <input
-              type="text"
-              name="lastName"
-              id="lastName"
-              className={styles.nameInput}
-            />
-            <label htmlFor="email" className={styles.email}>
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className={styles.emailInput}
-            />
-            <label htmlFor="message" className={styles.message}>
-              Message
-            </label>
-            <input
-              type="textarea"
-              name="message"
-              id="message"
-              className={styles.messageInput}
-            />
+            <div className={styles.nameContainer}>
+              <div className={styles.name}>
+                <label htmlFor="firstName" className={styles.nameLabel}>
+                  First Name
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  className={styles.nameInput}
+                />
+              </div>
+              <div className={styles.name}>
+                <label htmlFor="lastName" className={styles.nameLabel}>
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  className={styles.nameInput}
+                />
+              </div>
+            </div>
+            <div className={styles.email}>
+              <label htmlFor="email" className={styles.emailLabel}>
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className={styles.emailInput}
+              />
+            </div>
+            <div className={styles.message}>
+              <label htmlFor="message" className={styles.messageLabel}>
+                Message
+              </label>
+              <textarea
+                type="textarea"
+                name="message"
+                id="message"
+                rows="5"
+                className={styles.messageInput}
+              />
+            </div>
             <button type="submit" className={styles.btn}>
               Submit
             </button>
@@ -63,13 +81,39 @@ const Contact = () => {
           <div className={styles.center}>
             <div className={styles.info}>
               <div className={styles.infoItem}>
-                {/* icon from fontawsome */}
+                {<FontAwesomeIcon icon={faLocationDot} size="2x" />}
+
                 <h5 className={styles.infoHeading}>Address</h5>
                 <p className={styles.infoDesc}>
                   500 Terry Francine St. <br />
                   San Francisco, CA 94158
                 </p>
-                {/* copy this down to make the rest i am way too much tired to do this any more and i have to study math */}
+              </div>
+              <div className={styles.infoItem}>
+                {<FontAwesomeIcon icon={faEnvelope} size="2x" />}
+
+                <h5 className={styles.infoHeading}>Email</h5>
+                <p className={styles.infoDesc}>info@mysite.com</p>
+              </div>
+              <div className={styles.infoItem}>
+                {<FontAwesomeIcon icon={faPhone} size="2x" />}
+
+                <h5 className={styles.infoHeading}>Phone Number</h5>
+                <p className={styles.infoDesc}>123-456-7890</p>
+              </div>
+              <div className={styles.infoItem}>
+                {<FontAwesomeIcon icon={faBellConcierge} size="2x" />}
+
+                <h5 className={styles.infoHeading}>Timing</h5>
+                <ul className={styles.timingList}>
+                  <li className={styles.timingListItem}>
+                    Mon - Fri : 9am - 6pm
+                  </li>
+                  <li className={styles.timingListItem}>
+                    Saturday : 10am - 2pm
+                  </li>
+                  <li className={styles.timingListItem}>Sunday: Closed</li>
+                </ul>
               </div>
             </div>
           </div>

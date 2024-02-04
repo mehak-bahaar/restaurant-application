@@ -15,7 +15,7 @@ export default function Home() {
         description="Indulge in our tasty creations, where every bite tells a flavorful story. From savory classics to delightful surprises, our menu is a journey of culinary delights. Eat, enjoy, repeat – because good food is a simple joy."
         imgurl="/section1.webp"
         btnText="See More"
-        left={ false}
+        left={false}
       />
       <Sections
         title="Drink."
@@ -27,7 +27,8 @@ export default function Home() {
       />
       <Sections
         title="Enjoy."
-        subTitle="Relish the joy in every moment with us. From rich coffee to delightful bites, our offerings are crafted for your enjoyment. Sit back, savor, and make the most of your time with our simple pleasures."
+        subTitle="Savor the Joy in Every Bite."
+        description="Relish the joy in every moment with us. From rich coffee to delightful bites, our offerings are crafted for your enjoyment. Sit back, savor, and make the most of your time with our simple pleasures."
         imgurl="/enjoy2.jpeg"
         btnText="Visit Us"
         left={false}
