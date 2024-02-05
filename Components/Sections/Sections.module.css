@@ -57,7 +57,7 @@
     }
     .imageContainer{
         width: 100%;
-        min-height: 50%;
+        height: 100%;
     }
     .textContainer{
         padding: 10px 0;
