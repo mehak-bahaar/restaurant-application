@@ -2,6 +2,8 @@
 import Hero from "@/Components/Hero/Hero";
 import Sections from "@/Components/Sections/Sections";
 import Slider from "@/Components/Slider/Slider";
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
 
