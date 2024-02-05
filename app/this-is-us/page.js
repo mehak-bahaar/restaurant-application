@@ -1,18 +1,22 @@
 import React from 'react'
 import styles from './about.module.css'
 import Image from 'next/image';
+import Head from 'next/head';
 
 const About = () => {
 
   return (
     <>
+      <Head>
+        <title>Cafe 42 - This Is Us</title>
+      </Head>
       <div className={styles.thisIsUs}>
         <div className={styles.center2}>
           <h1 className={styles.thisIsUsTitle}>This Is Us</h1>
           <p className={styles.thisIsUsDesc}>
-            We are big believers in the power of a good meal and a friendly place
-            to eat. Stop by for fresh, locally sourced food, served with a warm
-            smile
+            We are big believers in the power of a good meal and a friendly
+            place to eat. Stop by for fresh, locally sourced food, served with a
+            warm smile
           </p>
         </div>
       </div>
@@ -43,7 +47,7 @@ const About = () => {
       <div className={styles.divider}>
         <p className={styles.dividerPara}>Real Food. No Secret Ingredients.</p>
       </div>
-      <div className={ styles.reverse}>
+      <div className={styles.reverse}>
         <div className={styles.imgContainer}>
           <Image
             alt="waiter"
@@ -58,8 +62,8 @@ const About = () => {
             <p className={styles.desc}>
               Savor the heartfelt essence of our culinary creations, expertly
               crafted and delivered to your plate. Experience the passion and
-              dedication we bring from our kitchen to your dining pleasure. It is
-              more than a meal; it is a journey of flavors made just for you.
+              dedication we bring from our kitchen to your dining pleasure. It
+              is more than a meal; it is a journey of flavors made just for you.
             </p>
             <button className={styles.btn}>Visit Us</button>
           </div>

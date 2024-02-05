@@ -29,7 +29,7 @@ const Slider = () => {
       <div className={styles.container2}>
         <div className={styles.slider}>
           <div className={styles.sliderImg}>
-            <Image alt='img'  className={styles.image} fill src='p3.jpg'></Image>
+            <Image alt='img'  className={styles.image} fill src='/enjoy.jpg'></Image>
           <Image alt='img'  src='/p.webp' fill className={styles.img}></Image>
           </div>
           <div className={styles.sliderImg}>

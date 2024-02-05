@@ -23,9 +23,6 @@ const Navbar = () => {
         <Link className={styles.link} href="/contact-us">
           Contact us
         </Link>
-        <Link className={styles.link} href="/login">
-          Log in
-        </Link>
       </div>
       {!showNavButton && (
         <div
@@ -63,9 +60,6 @@ const Navbar = () => {
             </Link>
             <Link className={styles.nlink} href="/contact-us">
               Contact us
-            </Link>
-            <Link className={styles.nlink} href="/login">
-              Log in
             </Link>
           </div>
         </>

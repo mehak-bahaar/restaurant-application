@@ -5,11 +5,15 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBellConcierge } from '@fortawesome/free-solid-svg-icons';
+import Head from 'next/head';
 
 
 const Contact = () => {
   return (
     <>
+    <Head>
+      <title>Cafe 42 - Contact Us</title>
+    </Head>
       <div className={styles.contactUs}>
         <div className={styles.center2}>
           <h1 className={styles.contactUsTitle}>Contact Us</h1>

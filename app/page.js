@@ -8,6 +8,9 @@ export default function Home() {
   
   return (
     <div>
+      <Head>
+        <Link rel="icon" href="/favicon.ico"></Link>
+      </Head>
       <Hero />
       <Sections
         title="Eat."
